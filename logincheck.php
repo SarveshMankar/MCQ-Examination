@@ -1,7 +1,7 @@
 <?php
 
-    $uname="sam";
-    $pwd="aparna";
+    $uname="a";
+    $pwd="a";
 
     session_start();
 

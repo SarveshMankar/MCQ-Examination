@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
 
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 

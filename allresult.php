@@ -27,17 +27,6 @@
         }
     </style>
     <style>
-        .bodycolor{
-            background: #9053c7;
-            background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
-            background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
-            background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
-            background: linear-gradient(-135deg, #c850c0, #4158d0);
-            height: 100%;
-            margin: 0;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
         .fortable{
             display: block;
             overflow-x: auto;
