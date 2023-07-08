@@ -34,9 +34,32 @@ So I created an MCQ Platform that makes running and managing MCQ Exams simple. I
 5.) Import the mcq.sql file in the database.<br>
 6.) Open any browser and type "localhost/MCQ-Examination".<br>
 7.) Login as an Examiner using the following credentials:<br>
-```
 
 ## Images
-<p>
-    <img src="./photos/1.png">
+
+<p align="center">
+  <img src="./photos/1.png">
+</p>
+<p align="center">
+  <img src="./photos/2.png">
+</p>
+
+<p align="center">
+  <img src="./photos/3.png">
+</p>
+
+<p align="center">
+  <img src="./photos/4.png">
+</p>
+
+<p align="center">
+  <img src="./photos/5.png">
+</p>
+
+<p align="center">
+  <img src="./photos/6.png">
+</p>
+
+<p align="center">
+  <img src="./photos/7.png">
 </p>
