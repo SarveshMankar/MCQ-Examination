@@ -14,7 +14,7 @@
     }
     elseif(isset($_SESSION['uname'])){
         ob_start();
-        header('Location: '.'dashboard.php');
+        header('Location: '.'./admin/dashboard.php');
         ob_end_flush();
         die();
     }
@@ -22,7 +22,7 @@
         if($_POST['uname']==$uname && $_POST['pwd']==$pwd){
             $_SESSION['uname']=$uname;
             ob_start();
-            header('Location: '.'dashboard.php');
+            header('Location: '.'./admin/dashboard.php');
             ob_end_flush();
             die();
         }

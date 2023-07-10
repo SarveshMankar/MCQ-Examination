@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <style>
+        th, td {
+            padding: 15px;
+        }
+        .div_height{
+            height: 225px;
+            width: 250px;
+            margin: 10px;
+        }
+    </style>
+    <style>
         .bodycolor{
             background: #9053c7;
             background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
@@ -29,8 +39,8 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="index.php" style="color:aliceblue">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="login.php" style="color:aliceblue">Admin Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="squizregister.php" style="color:aliceblue">Enter Quiz</a></li>
-                    <li class="nav-item"><a class="nav-link" href="result.php" style="color:aliceblue">Results</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./student/squizregister.php" style="color:aliceblue">Enter Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./results/result.php" style="color:aliceblue">Results</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" style="color:aliceblue">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" style="color:aliceblue">Contact Us</a></li>     
                 </ul>
