@@ -6,12 +6,12 @@
     }
     else{
         ob_start();
-        header('Location: '.'../login.php');
+        header('Location: '.'../../login.php');
         ob_end_flush();
         die();
     }
 
-    require ('../config.php');
+    require ('../../config.php');
 
     $conn=mysqli_connect($server_name,$username,$password,$database_name);
 

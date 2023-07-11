@@ -79,7 +79,7 @@
     
         <div class="jumbotron container div_height col-md-2" style="margin-left: 15%;">
             <center>
-                <form action="showquizdb.php" method="post">
+                <form action="./quiz/showquizdb.php" method="post">
                     <?php
                         $conn=mysqli_connect($server_name,$username,$password,$database_name);
 
@@ -111,7 +111,7 @@
         
         <div class="jumbotron container div_height col-md-2">
             <center>
-                <form action="update.php" method="post">
+                <form action="./quiz/update.php" method="post">
                     <?php         
                         $conn=mysqli_connect($server_name,$username,$password,$database_name);
 
@@ -143,14 +143,14 @@
         <div class="jumbotron container div_height col-md-2">
             <center>
                 <br>
-                <a href="quizname.php"><input type="button" class="btn btn-outline-secondary" value="Create Quiz" style="font-size:18px"></a>
+                <a href="./quiz/quizname.php"><input type="button" class="btn btn-outline-secondary" value="Create Quiz" style="font-size:18px"></a>
             </center>
             
         </div>
         
         <div class="jumbotron container div_height col-md-2">
             <center>
-                <form action="deletequiz.php" method="post">
+                <form action="./quiz/deletequiz.php" method="post">
                 <?php
                         $conn=mysqli_connect($server_name,$username,$password,$database_name);
 
@@ -188,7 +188,7 @@
         <tr>
             <td>
                 <div class="container jumbotron div_height">
-                    <form action="activated.php" method="post">
+                    <form action="./activation/activated.php" method="post">
                     <center>
                         <?php
                             $conn=mysqli_connect($server_name,$username,$password,$database_name);
@@ -219,7 +219,7 @@
             </td>
             <td>
                 <div class="container jumbotron  div_height">
-                    <form action="deactivated.php" method="post">
+                    <form action="./activation/deactivated.php" method="post">
                     <center>
                         <br><br>
                         <input type="submit" name="activate" value="Deactivate All Quiz" style="font-size:18px" class="btn btn-outline-secondary">
@@ -236,7 +236,7 @@
         <tr>
             <td>
                 <div class="container jumbotron div_height">
-                    <form action="temprel.php" method="post">
+                    <form action="./results/temprel.php" method="post">
                     <br>
                     <center>
                         <?php
@@ -269,7 +269,7 @@
 
             <td>
                 <div class="container jumbotron div_height">
-                    <form action="settingresult.php" method="post">
+                    <form action="./results/settingresult.php" method="post">
                     
                     <center>
                         <h5>Student's View</h5>
@@ -302,7 +302,7 @@
             </td>
             <td>
                 <div class="container jumbotron div_height">
-                    <form action="clearresultview.php" method="post">
+                    <form action="./results/clearresultview.php" method="post">
                     
                     <center>
                         <h5>Clear Student's Result View</h5>

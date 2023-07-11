@@ -6,7 +6,7 @@
     }
     else{
         ob_start();
-        header('Location: '.'../login.php');
+        header('Location: '.'../../login.php');
         ob_end_flush();
         die();
     }
@@ -18,9 +18,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Deleted Quiz</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Quiz Activated</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
 
     <style>
         .bodycolor{
@@ -42,47 +42,50 @@
         <div class="container-fluid"><a class="navbar-brand" href="" style="color:aliceblue">MCQ Software</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="dashboard.php" style="color:aliceblue">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../dashboard.php" style="color:aliceblue">Dashboard</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" style="color:aliceblue">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" style="color:aliceblue">Contact Us</a></li>     
                 </ul>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav ">
-                    <img src="../assets/img/my_logo.jpeg" alt="" width="70" height="70">			
+                    <img src="../../assets/img/my_logo.jpeg" alt="" width="70" height="70">			
                 </ul>		  
                 </div>
             </div>
         </div>
     </nav>
     <br>
+    <?php
+        require ('../../config.php');
+    ?>
     <div class="jumbotron container">
         <center>
+            
         <?php
-            require ('../config.php');
-        ?>
-        <?php
-        function update($server_name,$username,$password,$database_name){
-            $qn=$_POST['deleteopt'];
+        function activate($server_name,$username,$password,$database_name){
+            $qz=$_POST['activateopt'];
 
             $conn=mysqli_connect($server_name,$username,$password,$database_name);
-            //now check the connection
+            
             if(!$conn)
             {
                 die("Connection Failed:" . mysqli_connect_error());
             }
             
-            if (isset($_POST['delete'])){
-                $sql_query = "DELETE from questions where quizname='$qn'";
+            if (isset($_POST['activate'])){
+                $sql_query = "TRUNCATE table activated;";
+                mysqli_query($conn, $sql_query);
+                $sql_query = "INSERT INTO activated (quizname) VALUES ('$qz')";
                 mysqli_query($conn, $sql_query);
             }
 
             mysqli_close($conn);
-            echo "<h2>$qn Quiz Deleted!</h2>";
+            echo "<h2>$qz Quiz Activated!</h2>";
         }
-        update($server_name,$username,$password,$database_name);
+        activate($server_name,$username,$password,$database_name);
         ?>
         </center>
     </div>
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
 </body>

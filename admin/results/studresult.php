@@ -6,7 +6,7 @@
     }
     else{
         ob_start();
-        header('Location: '.'../login.php');
+        header('Location: '.'../../login.php');
         ob_end_flush();
         die();
     }
@@ -18,8 +18,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Student Results</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
 
     <style>
         th, td {
@@ -50,7 +50,7 @@
         <div class="container-fluid"><a class="navbar-brand" href="" style="color:aliceblue">MCQ Software</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="dashboard.php" style="color:aliceblue">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../dashboard.php" style="color:aliceblue">Dashboard</a></li>
                     <li class="nav-item"><a class="nav-link" href="allresult.php" style="color:aliceblue">Complete Result</a></li>
                     <li class="nav-item"><a class="nav-link" href="studresult.php" style="color:aliceblue">Student Result</a></li>
                     <li class="nav-item"><a class="nav-link" href="graph.php" style="color:aliceblue">Graphical View</a></li>
@@ -59,14 +59,14 @@
                 </ul>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav ">
-                    <img src="../assets/img/my_logo.jpeg" alt="" width="70" height="70">			
+                    <img src="../../assets/img/my_logo.jpeg" alt="" width="70" height="70">			
                 </ul>		  
                 </div>
             </div>
         </div>
     </nav>
     <?php
-        require ('../config.php');
+        require ('../../config.php');
     ?>
     <br>
     <div class="jumbotron container">
@@ -206,7 +206,7 @@
         ?>
     </div>
     <br><br>
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

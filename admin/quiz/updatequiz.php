@@ -6,7 +6,7 @@
     }
     else{
         ob_start();
-        header('Location: '.'../login.php');
+        header('Location: '.'../../login.php');
         ob_end_flush();
         die();
     }
@@ -18,8 +18,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Updated</title>    
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     <style>
         .bodycolor{
             background: #9053c7;
@@ -40,7 +40,7 @@
         <div class="container-fluid"><a class="navbar-brand" href="" style="color:aliceblue">MCQ Software</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="dashboard.php" style="color:aliceblue">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../dashboard.php" style="color:aliceblue">Dashboard</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" style="color:aliceblue">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" style="color:aliceblue">Contact Us</a></li>     
                 </ul>
@@ -53,7 +53,7 @@
         </div>
     </nav>
     <?php
-        require ('../config.php');
+        require ('../../config.php');
     ?>
     <br>
     <div class="container jumbotron">
@@ -115,7 +115,7 @@
             update($server_name,$username,$password,$database_name);
         ?>
     </div>
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
