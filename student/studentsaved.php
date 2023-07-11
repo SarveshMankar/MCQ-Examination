@@ -29,7 +29,7 @@
         <div class="container-fluid"><a class="navbar-brand" href="" style="color:aliceblue">MCQ Software</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.php" style="color:aliceblue">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../index.php" style="color:aliceblue">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" style="color:aliceblue">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" style="color:aliceblue">Contact Us</a></li>     
                 </ul>
